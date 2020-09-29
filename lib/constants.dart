@@ -1,3 +1,3 @@
 const Map<String, String> Constants = const {
-  'API_BASE_URL': '<ROOT_URL>/wp-json/wp/v2'
+  'API_BASE_URL': 'https://bukatutup.net/wp-json/wp/v2'
 };

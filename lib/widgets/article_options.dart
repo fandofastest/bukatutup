@@ -22,22 +22,22 @@ class ArticleOptions extends StatelessWidget {
       child: ListView(
         children: <Widget>[
           ListTile(
-            title: Text('Lire plus tard'),
+            title: Text('Bookmark'),
             leading: Icon(Icons.bookmark),
             onTap: () => bookmark(id),
           ),
           ListTile(
-            title: Text('Ajouter aux favoris'),
+            title: Text('Add to Favorite'),
             leading: Icon(Icons.favorite),
             onTap: () => addFavorite(id),
           ),
           ListTile(
-            title: Text('Partager'),
+            title: Text('Share'),
             leading: Icon(Icons.share),
             onTap: () => share(id),
           ),
           ListTile(
-            title: Text('Ajouter à la liste noire'),
+            title: Text('Remove'),
             leading: Icon(Icons.block),
             onTap: () => hideStory(id),
           ),

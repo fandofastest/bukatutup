@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:timeago/timeago.dart' as timeago;
 
-import 'package:flutter_news_app/pages/details_page.dart';
-import 'package:flutter_news_app/pages/tabbar.dart';
+import 'package:bukatutupapp/pages/details_page.dart';
+import 'package:bukatutupapp/pages/tabbar.dart';
 
-import 'package:flutter_news_app/providers/articles.dart';
-import 'package:flutter_news_app/providers/categories.dart';
-import 'package:flutter_news_app/providers/user.dart';
+import 'package:bukatutupapp/providers/articles.dart';
+import 'package:bukatutupapp/providers/categories.dart';
+import 'package:bukatutupapp/providers/user.dart';
 
 class FlutterNewsApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -29,7 +29,7 @@ class FlutterNewsApp extends StatelessWidget {
         userChangeNotifier,
       ],
       child: MaterialApp(
-        title: 'Flutter News App',
+        title: 'Buka Tutup Net',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           primaryColor: Colors.white,

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_news_app/pages/home_page.dart';
-import 'package:flutter_news_app/pages/favorites_page.dart';
-import 'package:flutter_news_app/pages/bookmarks_page.dart';
+import 'package:bukatutupapp/pages/home_page.dart';
+import 'package:bukatutupapp/pages/favorites_page.dart';
+import 'package:bukatutupapp/pages/bookmarks_page.dart';
 
 class Tabbar extends StatefulWidget {
   static final routeName = '/';
@@ -35,15 +35,15 @@ class _TabbarState extends State<Tabbar> {
         items: [
           BottomNavigationBarItem(
             icon: new Icon(Icons.home),
-            title: new Text('Accueil'),
+            title: new Text('Home'),
           ),
           BottomNavigationBarItem(
             icon: new Icon(Icons.favorite),
-            title: new Text('Favoris'),
+            title: new Text('Favorit'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.watch_later),
-            title: Text('Signets'),
+            title: Text('Bookmark'),
           )
         ],
         onTap: onTabTapped,

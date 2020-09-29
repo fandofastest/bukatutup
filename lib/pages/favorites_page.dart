@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'package:flutter_news_app/providers/user.dart';
-import 'package:flutter_news_app/providers/articles.dart';
+import 'package:bukatutupapp/providers/user.dart';
+import 'package:bukatutupapp/providers/articles.dart';
 
-import 'package:flutter_news_app/widgets/article_list_item.dart';
+import 'package:bukatutupapp/widgets/article_list_item.dart';
 
-import 'package:flutter_news_app/pages/details_page.dart';
+import 'package:bukatutupapp/pages/details_page.dart';
 
 class FavoritesPage extends StatelessWidget {
   void _showMessage(BuildContext context, String message) {
@@ -34,22 +34,14 @@ class FavoritesPage extends StatelessWidget {
     var articlesProvider = Provider.of<ArticlesProvider>(context);
 
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        leading: IconButton(
-          icon: Icon(
-            Icons.menu,
-          ),
-          onPressed: () {},
-        ),
-      ),
+
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
             AppBar(
               elevation: 0,
               title: Text(
-                'Filtrer les favoris',
+                'Berita Favorit Anda',
               ),
               actions: <Widget>[
                 IconButton(

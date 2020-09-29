@@ -3,16 +3,16 @@ import 'package:provider/provider.dart';
 import 'package:share/share.dart';
 import 'dart:math' as Math;
 
-import 'package:flutter_news_app/providers/articles.dart';
-import 'package:flutter_news_app/providers/categories.dart';
-import 'package:flutter_news_app/providers/user.dart';
+import 'package:bukatutupapp/providers/articles.dart';
+import 'package:bukatutupapp/providers/categories.dart';
+import 'package:bukatutupapp/providers/user.dart';
 
-import 'package:flutter_news_app/widgets/article_card_item.dart';
-import 'package:flutter_news_app/widgets/article_list_item.dart';
-import 'package:flutter_news_app/widgets/article_options.dart';
+import 'package:bukatutupapp/widgets/article_card_item.dart';
+import 'package:bukatutupapp/widgets/article_list_item.dart';
+import 'package:bukatutupapp/widgets/article_options.dart';
 
-import 'package:flutter_news_app/pages/details_page.dart';
-import 'package:flutter_news_app/models/article.dart';
+import 'package:bukatutupapp/pages/details_page.dart';
+import 'package:bukatutupapp/models/article.dart';
 
 class Articles extends StatefulWidget {
   @override
@@ -205,7 +205,7 @@ class _ArticlesState extends State<Articles> {
                           Container()
                         else if (!_isLoadingNextPage)
                           FlatButton(
-                            child: Text('Voir plus'),
+                            child: Text('Load More'),
                             onPressed: _nextPage,
                           )
                         else

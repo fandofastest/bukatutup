@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'package:flutter_news_app/widgets/articles.dart';
-import 'package:flutter_news_app/widgets/categories.dart';
+import 'package:bukatutupapp/widgets/articles.dart';
+import 'package:bukatutupapp/widgets/categories.dart';
 
-import 'package:flutter_news_app/providers/articles.dart';
+import 'package:bukatutupapp/providers/articles.dart';
 
 class HomePage extends StatelessWidget {
   static const routeName = '/home';
@@ -16,15 +16,7 @@ class HomePage extends StatelessWidget {
       listen: false,
     );
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        leading: IconButton(
-          icon: Icon(
-            Icons.menu,
-          ),
-          onPressed: () {},
-        ),
-      ),
+
       body: RefreshIndicator(
         onRefresh: articlesProvider.refresh,
         child: SingleChildScrollView(
@@ -33,7 +25,7 @@ class HomePage extends StatelessWidget {
               AppBar(
                 elevation: 0,
                 title: Text(
-                  'Découvrez l\'actualité',
+                  'Buka Tutup Net',
                 ),
                 actions: <Widget>[
                   IconButton(
